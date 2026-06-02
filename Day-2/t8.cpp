@@ -13,7 +13,7 @@ int main()
     int orgnum = num;
 
     // Extract digits from org number from right to left and add to new number
-    while(num>0)
+    while(num!=0)
     {
         rem = num % 10;
         reversednum = reversednum * 10 + rem;
