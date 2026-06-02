@@ -11,7 +11,7 @@ int main()
     cin >> num;
 
     // Extract digits from org number from right to left and add to new number
-    while(num>0)
+    while(num!=0)
     {
         rem = num % 10;
         newnum = newnum * 10 + rem;
