@@ -1,47 +1,29 @@
 #include <iostream>
 using namespace std;
 
-// Program to find maximum frequency character
-
-// Function to calculate occurence of a character
-int count(string s, char ch)
-{
-    int countch=0;
-    for (int i=0; i<s.length(); i++)
-    {
-        if ( s[i] == ch )
-        {
-            countch ++;
-        }
-    }
-    return countch;
-}
+// Program to calculate frequency of a character
 
 int main()
 {
     string str;
-    char ans;
+    char ch;
+    int count = 0;
 
     cout << "Enter s string : ";
     getline(cin, str);
 
-    int maxfreq=0;
+    cout << "Enter the character to find frequency : ";
+    cin >> ch;
 
     for (int i=0; i<str.length(); i++)
     {
-        if ( !isspace(str[i]) )       // Ignore spaces
+        if ( str[i] == ch)
         {
-            int freq = count(str, str[i]);
-
-            if (freq > maxfreq)
-            {
-                maxfreq = freq;
-                ans = str[i];
-            }
+            count ++;
         }
     }
 
-    cout << "Maximum occuring character is " << ans;
+    cout << ch << " occurs " << count << " times.";
 
     return 0;
 }
