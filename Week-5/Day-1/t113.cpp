@@ -107,7 +107,7 @@ int main()
                 }
                 else
                 {
-                    cout << "Swaure root of negative number is not possible.";
+                    cout << "Sqaure root of negative number is not possible.";
                 }
                 break;
             }
